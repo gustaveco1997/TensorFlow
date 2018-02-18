@@ -1,0 +1,157 @@
+{
+  "intents": [
+    {
+      "tag": "cumprimento",
+      "patterns": [
+        "Maria?",
+        "Olá",
+        "Opa",
+        "Oi",
+        "Bom dia",
+        "Boa tarde",
+        "Boa Noite",
+        "Olá Maria",
+        "Tem alguém aí?",
+        "Boa tarde, senhorita. Como vai?"
+      ],
+      "responses": [
+        "Olá meu anjo,",
+        "Olá. Que bom ver você novamente",
+        "E aí",
+        "Opa"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Desligar",
+        "Até mais",
+        "Vejo você depois",
+        "Tchau",
+        "Até logo"
+      ],
+      "responses": [
+        "Vejo você depois, Obrigado por falar comigo",
+        "Tenha um belo dia,tarde... ou noite",
+        "Tchau. Vejo você em breve",
+        "Tudo bem, vou embora, mas vejo você em breve"
+      ],
+      "context_set": "ida"
+    },
+    {
+      "tag": "despedida2",
+      "patterns": [
+        "Com certeza"
+      ],
+      "responses": [
+        "Combinado então"
+      ],
+      "context_filter": "ida"
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": [
+        "Obrigado",
+        "Brigado",
+        "Valeu"
+      ],
+      "responses": [
+        "Disponha",
+        "Não foi nada",
+        "É um prazer ajudá-lo"
+      ]
+    },
+    {
+      "tag": "funcoes",
+      "patterns": [
+        "Ajuda",
+        "Me Ajude",
+        "O que você pode fazer",
+        "Maria, liste sua funcões",
+        "Listar Funções",
+        "O que você faz?"
+      ],
+      "responses": [
+        "Posso fazer coisas que você nem imagina... Posso abrir sites no navegador... Fazer pesquisas no Google... E futuramente, poderei tocar suas músicas no Spotify"
+      ]
+    },
+    {
+      "tag": "elogios",
+      "patterns": [
+        "Você é linda",
+        "Você é muito eficiente",
+        "Adoro você",
+        "linda",
+        "Gata",
+        "Você é tão atenciosa",
+        "Atenciosa"
+      ],
+      "responses": [
+        "Obrigada, não careço de tal elogio",
+        "Sua opinião querido... mas agradeço",
+        "Muito obrigada",
+        "Fico envergonhada com suas palavras, muito obrigada!"
+      ]
+    },
+    {
+      "tag": "mopeds",
+      "patterns": [
+        "Which mopeds do you have?",
+        "What kinds of mopeds are there?",
+        "What do you rent?"
+      ],
+      "responses": [
+        "We rent Yamaha, Piaggio and Vespa mopeds",
+        "We have Piaggio, Vespa and Yamaha mopeds"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and AMEX",
+        "We accept most major credit cards"
+      ]
+    },
+    {
+      "tag": "opentoday",
+      "patterns": [
+        "Are you open today?",
+        "When do you open today?",
+        "What are your hours today?"
+      ],
+      "responses": [
+        "We're open every day from 9am-9pm",
+        "Our hours are 9am-9pm every day"
+      ]
+    },
+    {
+      "tag": "rental",
+      "patterns": [
+        "Can we rent a moped?",
+        "I'd like to rent a moped",
+        "How does this work?"
+      ],
+      "responses": [
+        "Are you looking to rent today or later this week?"
+      ],
+      "context_set": "rentalday"
+    },
+    {
+      "tag": "today",
+      "patterns": [
+        "today"
+      ],
+      "responses": [
+        "For rentals today please call 1-800-MYMOPED",
+        "Same-day rentals please call 1-800-MYMOPED"
+      ],
+      "context_filter": "rentalday"
+    }
+  ]
+}

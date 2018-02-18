@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/gustavo/CorretorOrtografico/Modelo/model.tflearn"
+all_model_checkpoint_paths: "/home/gustavo/CorretorOrtografico/Modelo/model.tflearn"
